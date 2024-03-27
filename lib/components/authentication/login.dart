@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:idelly/components/authentication/forgot_password.dart';
 import 'package:idelly/components/authentication/sign_up.dart';
+import 'package:idelly/components/home_connected.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage() : super();
@@ -44,6 +45,10 @@ class LoginPage extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {
                   // TODO: Implement sign-in logic
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeConnectedPage()),
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   foregroundColor: Colors.white,
